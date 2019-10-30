@@ -67,6 +67,9 @@ BUGFIX
 			OLD : not reach to a picked color
 			NEW : patched
 			[x] : NEW_FEATURE @ 2019/09/10
+		transparent color
+			OLD : black
+			NEW : not used
 	OrangeCat
 		Key Bindings : menu key : when simple menu is displayed
 			OLD : simple menu remains
