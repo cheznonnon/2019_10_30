@@ -1,0 +1,209 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/10/30
+
+
+BUGFIX
+
+
+	win32/win_combobox.c
+		behavior
+			OLD : misbehave
+			NEW : fixed
+			[x] : ??? @ 2019/09/30
+	win32/win_scrollbar.c
+		n_win_scrollbar_draw_always() : comment
+			OLD : typo
+			NEW : fixed
+	win32/win_simplemenu.c
+		Win10 : Dark Mode
+			OLD : border is not drawn when radio/check
+			NEW : fixed
+	win32/win_txtbox.c
+		select all
+			OLD :    input
+			NEW : no input
+		n_win_txtbox_autofocus() : horizontal scrollbar
+			OLD : not reset when a line is changed
+			NEW : fixed
+
+	CatPad
+		select all
+			OLD : a save button will be enabled
+			NEW : fixed
+		search : horizontal scrollbar
+			OLD : not reset when a line is changed
+			NEW : fixed
+	nmixer
+		Key Bindings
+			OLD : not working
+			NEW : fixed
+	Nonnon Paint
+		Pen : Edge : zero
+			OLD : too thick
+			NEW : fixed
+		Key Bindings : number keys
+			OLD : not working
+			NEW : fixed
+			[!] : old code causes
+			[x] : NEW_FEATURE @ 2019/10/10
+		Simple Menu : maximum window
+			OLD : not disappear when click title bar
+			NEW : fixed
+			[x] : NEW_FEATURE @ 2019/10/10
+		Pen
+			OLD : not reach to a picked color
+			NEW : patched
+			[x] : NEW_FEATURE @ 2019/09/10
+	OrangeCat
+		Key Bindings : menu key : when simple menu is displayed
+			OLD : simple menu remains
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	win32/win_simplemenu.c
+		key binding
+			NEW : Alt available
+	win32/win_txtbox.c
+		Right-To-Left language support
+			NEW : partially supported
+			[!] : edit mode uses character based
+			[!] : changing composit mode when line focus is lost
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/10/20
+
+
+BUGFIX
+
+
+	win32/win_titlemenu.c
+		condition
+			OLD : all borders
+			NEW : caption only
+
+	Nonnon Paint
+		Menu : when a child window is made
+			OLD : a parent window will not gray-out'ed
+			NEW : fixed
+	OrangeCat
+		Menu : when "-find" option is used
+			OLD : appear
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	project/macro.c
+		n_project_toolband_proc()
+			NEW : a parameter "sysmenu_onoff" is added
+			[!] : usage is changed
+
+	win32/gdi/dibsection.c
+		HDC
+			OLD : GetDC() only
+			NEW : external HDC possible
+			[!] : usage is changed
+	win32/gdi/doublebuffer.c
+		HDC
+			OLD : GetDC() only
+			NEW : external HDC possible
+			[!] : usage is changed
+	win32/gdi/doublebuffer_32bpp.c
+		HDC
+			OLD : GetDC() only
+			NEW : external HDC possible
+			[!] : usage is changed
+	win32/win.c
+		n_win_on_mousemove_fast()
+			NEW : faster version
+			[!] : usage is a little complex
+			[!] : but still heavy, use WM_MOUSEMOVE first
+			[!] : only for detecting WM_MOUSELEAVE
+	win32/win_scrollbar.c
+		CLASSIC : shaft color
+			NEW : easier to recognize
+	win32/win_simplemenu.c
+		source code
+			NEW : refactored
+			[!] : super fast mode available
+		key binding
+			NEW : Esc available
+
+	All
+		system menu
+			NEW : menu click only
+			[!] : for double-click
+	CatPad
+		title bar menu
+			NEW : no menu
+	OrangeCat
+		Style : "8" : draw : Win8 or later
+			OLD : original solid color scheme
+			NEW : by system visual style
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/10/10
+
+
+BUGFIX
+
+
+	Nonnon Calendar
+		sticky mode : register popup
+			OLD : typo
+			NEW : fixed
+	Nonnon White Noise
+		sticky mode : register popup
+			OLD : typo
+			NEW : fixed
+	nmixer
+		sticky mode : register popup
+			OLD : typo
+			NEW : fixed
+	OrangeCat
+		Scroll Pager : when style is changed
+			OLD : too fast changement
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	win32/win_simplemenu.c
+		released
+			NEW : simple menu
+			[!] : for dark mode
+			[!] : accordion UI based, no sub-menu available
+
+
+----------==========----------==========----------==========----------
+
