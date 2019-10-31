@@ -12,6 +12,30 @@
 Change Log
 
 
+2019/10/31 : Recall : Release #1
+
+
+BUGFIX
+
+
+	Nonnon Paint
+		Key Bindings : 2/3/4/9
+			OLD : not working
+			NEW : fixed
+			[x] : NEW_FEATURE @ 2019/10/10
+		Gray Canvas
+			OLD : broken
+			NEW : fixed
+			[!]:  static cache causes
+			[x] : when multi-thread is implemented
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2019/10/30
 
 
